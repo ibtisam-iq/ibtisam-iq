@@ -7,7 +7,7 @@ These cheat sheets are not just collections of commands but reflect a hands-on j
 
 ## Contents
 - `dockerCheatSheet.txt`  
-- `kubernetesCheatSheet.txt`
+- `k8sCheatSheet.txt`
 - `gitCheatSheet.txt`  
 
 ## Why Use These?
