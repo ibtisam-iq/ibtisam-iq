@@ -7,8 +7,8 @@ This repository contains **real console commands and outputs** from my hands-on 
 - **Growth Journey**: Refined understanding through multiple iterations - Docker (3rd attempt), Kubernetes (2nd attempt).  
 
 ## What's Inside?  
-- `docker_workbook.txt`  
-- `kubernetes_workbook.txt`  
+- `dockerWorkbook.txt`  
+- `kubernetesWorkbook.txt`  
 
 Each file demonstrates practical workflows and real-time outputs.  
 
