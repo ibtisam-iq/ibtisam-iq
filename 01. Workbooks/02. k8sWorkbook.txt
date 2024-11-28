@@ -1,6 +1,4 @@
-# Setting up different tools:
-
-
+🚀 Setting up different tools:
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
@@ -153,9 +151,7 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME   CLUSTER   AUTHINFO   NAMESPACE
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# setting up pod
+🚀 setting up pod
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml
@@ -231,9 +227,7 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl delete po abc
 pod "abc" deleted
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# init container
+🚀 init container
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml
@@ -252,9 +246,7 @@ NAME   READY   STATUS    RESTARTS   AGE    IP           NODE             NOMINAT
 init   1/1     Running   0          116s   10.244.3.3   ibtisam-worker   <none>           <none>
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# rc,rs,deploy
+🚀 rc, rs, deploy
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get po,rc,rs,deploy -o wide
 NAME                          READY   STATUS    RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
@@ -403,9 +395,7 @@ NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMA
 deployment.apps/dp7xyz   5/5     5            5           84m   dp7nginx     nginx    app=database
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# rollout
+🚀 rollout
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get deploy
 No resources found in default namespace.
@@ -545,9 +535,7 @@ NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMA
 deployment.apps/dp7xyz   3/3     3            3           52m   nginx        nginx    app=dp7xyz
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# blue-green deployment (port forwarding is optional)
+🚀 blue-green deployment (port forwarding is optional)
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml  071.b-g-dep.yaml  072.can.dep.yaml  07.rc-rs-dep.yaml
@@ -598,7 +586,6 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl delete svc b-g-svc
 service "b-g-svc" deleted
 ibtisam@mint-dell:~/k8s/10-1$ 
 
- 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 071.b-g-dep.yaml
 deployment.apps/dp7blue created
 service/b-g-svc created
@@ -665,9 +652,7 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl port-forward service/b-g-svc 7080:3741 > /
 [2] 1031007
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# setting up canary deployment (no port forwarding)
+🚀 setting up canary deployment (no port forwarding)
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml  071.b-g-dep.yaml  072.can.dep.yaml  07.rc-rs-dep.yaml  08.svc.yaml
@@ -779,9 +764,7 @@ exit
 
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# namespace, resource quota
+🚀 namespace, resource quota
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl replace -f 09.ns.yaml --force
 namespace "ibtisam" deleted
@@ -895,9 +878,7 @@ No resources found in default namespace.
 ibtisam@mint-dell:~/k8s/10-1$ kubectl delete ns ibtisam		# deleted everything created in that namespace
 namespace "ibtisam" deleted
 
-
-
-# services, ClusterIP & NodePort
+🚀 services, ClusterIP & NodePort
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 08.svc.yaml
 service/c-ip-svc created
@@ -922,7 +903,6 @@ service/kubernetes   ClusterIP   10.96.0.1     <none>        443/TCP          23
 service/np-svc       NodePort    10.96.49.7    <none>        8080:30080/TCP   19m   flavor=blue
 ibtisam@mint-dell:~/k8s/10-1$ docker exec -it ibtisam-worker bash
 
-
 root@ibtisam-worker:/# curl 10.244.3.19:80			pod_ip:service_port
 <h1>Welcome to nginx!</h1>
 
@@ -934,7 +914,6 @@ root@ibtisam-worker:/# curl 10.244.2.20:8080			pod_ip:service_port
 
 </html>root@ibtisam-worker:/# curl 10.96.49.7:8080		cluster_ip:service_port
 <!DOCTYPE html>
-
 
 ibtisam@mint-dell:~/k8s/10-1$ curl ifconfig.me
 139.135.46.208ibtisam@mint-delip r l
@@ -957,9 +936,7 @@ Forwarding from 127.0.0.1:7575 -> 8080
 Forwarding from [::1]:7575 -> 8080
 Handling connection for 7575
 
-
-
-# Jobs & cron jobs
+🚀 Jobs & cron jobs
 
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 10.job.yaml
@@ -1074,10 +1051,7 @@ Events:
   Normal  Completed         18m   job-controller  Job completed
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-
-# command & args
+🚀 command & args
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f test.po.yaml
 pod/test-pod created
@@ -1162,9 +1136,7 @@ ibtisam@mint-dell:~/k8s/10-1$ curl localhost:6969
 
 </div>ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# env, config map, secret
+🚀 env, config map, secret
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 11.cm-sec.yaml
 configmap/abc-cm unchanged
@@ -1227,9 +1199,7 @@ APP_COLOR
 /etc/config # cat APP_COLOR 
 red/etc/config #  
 
-
-
-# YAML sh -c
+🚀 YAML sh -c
 
 command: ['sh', '-c', 'echo $APP_COLOR', 'ls -l /etc/config', 'cat /etc/config/APP_COLOR', 'sleep 3600 && echo $PWD'] so this is also wrong?
 ChatGPT said:
@@ -1274,9 +1244,7 @@ Example of Applying and Creating Resources:
 kubectl apply -f resource.yaml: Applies the resource from the YAML file and tracks changes automatically.
 kubectl create -f resource.yaml --save-config: Creates the resource and saves its configuration for future updates using apply.
 
-
-
-# security contexts
+🚀 security contexts
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 06.po.sec-con.yaml
 pod/sec-con-po-0 created
@@ -1320,10 +1288,7 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl exec sec-con-po-2 -c sec-con-cont-2 -- who
 whoami: unknown uid 1000
 command terminated with exit code 1
 
-
-
-
-# Service account
+🚀 Service account
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 12.sa-r-rb.yaml
 pod/dashboard-app created
@@ -1362,9 +1327,7 @@ dashboard-app-sa   0         10m
 default            0         2d21h
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# taints & toleration # node selector # node affinity
+🚀 taints & toleration # node selector # node affinity
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get nodes
 NAME                     STATUS   ROLES           AGE   VERSION
@@ -1512,9 +1475,7 @@ sa-po             1/1     Running   0          41s   10.244.3.10   ibtisam-worke
 tol-ha-po         0/1     Pending   0          41s   <none>        <none>            <none>           <none>
 tol-po            1/1     Running   0          42s   10.244.2.14   ibtisam-worker2   <none>           <none>
 
-
-
-# Monitoring & Debugging
+🚀 Monitoring & Debugging
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 serviceaccount/metrics-server created
@@ -1553,9 +1514,7 @@ ibtisam-worker           95m          2%     112Mi           5%
 ibtisam-worker2          114m         2%     184Mi           9%        
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
-
-# ingress 
+🚀 ingress 
 
 
 ibtisam@mint-dell:~$ kubectl config get-contexts

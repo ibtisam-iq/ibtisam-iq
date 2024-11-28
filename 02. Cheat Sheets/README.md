@@ -2,12 +2,13 @@
 
 This repository offers structured cheat sheets for essential DevOps tools like Docker and Kubernetes. These sheets focus on the most practical and frequently used commands, making them ideal for quick reference.
 
-## How These Sheets Were Created  
+## Behind the Sheets 
 These cheat sheets are not just collections of commands but reflect a hands-on journey. Each command was carefully added during my learning process as I worked through real-world scenarios and challenges. These are curated to save time and help others navigate these tools effectively, just as these’ve helped me.
 
 ## Contents
 - `dockerCheatSheet.txt`  
-- `kubernetesCheatSheet.txt` 
+- `kubernetesCheatSheet.txt`
+- `gitCheatSheet.txt`  
 
 ## Why Use These?
 - **Practical Focus**: Commands tested and refined in real practice sessions.  

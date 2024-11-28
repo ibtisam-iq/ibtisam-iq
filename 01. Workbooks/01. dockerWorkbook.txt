@@ -1,5 +1,4 @@
-# busybox vs alpine
-
+🚀 busybox & alpine
 
 ibtisam@mint-dell:~$ docker run -it --name con1 busybox
 / # uname -a
@@ -74,9 +73,7 @@ CONTAINER ID   IMAGE     COMMAND     CREATED             STATUS                 
 b4dd6aca6a27   busybox   "sh"        About an hour ago   Exited (137) 16 minutes ago             con1
 ibtisam@mint-dell:~$ 
 
-
-
-# -d # docker top
+🚀 -d # docker top
 
 ibtisam@mint-dell:~$ docker run -d -it alpine sh				deattaches, but keep running in background
 45ebc49673a919ba8b7cd939f67d38714bb0eeef6026837fe9bf19e8a8c3b57a
@@ -88,9 +85,7 @@ UID                 PID                 PPID                C                   
 root                919                 897                 0                   07:10               ?                   00:00:00            sh
 ibtisam@mint-dell:~$
 
-
-
-# ubuntu vs alpine size; sh -c
+🚀 ubuntu vs alpine size; sh -c
 
 ibtisam@mint-dell:~$ docker images
 REPOSITORY                       TAG                  IMAGE ID       CREATED         SIZE
@@ -106,9 +101,7 @@ user	0m0.076s
 sys	0m0.059s
 ibtisam@mint-dell:~$ 
 
-
-
-# COMMAND				docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+🚀 COMMAND				docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 ibtisam@mint-dell:~$ docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                      PORTS     NAMES
@@ -145,9 +138,7 @@ d7825dfab906   alpine    "echo Linux mint-del…"   3 minutes ago        Exited 
 ec9cf44637a8   alpine    "ls"                     7 minutes ago        Exited (0) 7 minutes ago                  hardcore_kowalevski
 ibtisam@mint-dell:~$ 
 
-
-
-# docker start vs docker start --attach
+🚀 docker start vs docker start --attach
 
 ibtisam@mint-dell:~$ docker run --name hello hello-world
 
@@ -169,9 +160,7 @@ To try something more ambitious, you can run an Ubuntu container with:
 
 ibtisam@mint-dell:~$ 
 
-
-
-# bash vs sh vs /bin/bash vs /bin/sh
+🚀 bash vs sh vs /bin/bash vs /bin/sh
 
 ibtisam@mint-dell:~$ docker run -it ubuntu bash
 root@af97289d2e3d:/# ls
@@ -194,9 +183,7 @@ root
 # exit
 ibtisam@mint-dell:~$
 
-
-
-# ubuntu image based container
+🚀 ubuntu image based container
 
 The issue is that your container abc keeps exiting immediately after starting. This happens because the container's default command (/bin/bash) is completing and exiting, leaving the container in a stopped state.
 
@@ -217,9 +204,7 @@ root@167b14d4409b:/# exit
 exit
 ibtisam@mint-dell:~$ 
 
-
-
-# docker status
+🚀 docker status
 
 ibtisam@mint-dell:~$ systemctl status docker
 ● docker.service - Docker Application Container Engine
@@ -242,9 +227,7 @@ ibtisam@mint-dell:~$ systemctl status docker
      Active: active (running) since Sun 2024-09-22 22:10:36 PKT; 1 day 17h ago
 TriggeredBy: ● docker.socket
        
-
-
-# port mapping
+🚀 port mapping
 
 ibtisam@mint-dell:~$ docker run -d -it --name abc -p 8080:80 nginx
 d0984c3a7b1947a2bfa49a30766b62e623a69da1cabfc99d93c3bddb784348c3
@@ -260,9 +243,7 @@ ibtisam@mint-dell:~$ netstat -tulpn | grep 8080
 tcp6       0      0 :::8080                 :::*                    LISTEN      -                   
 ibtisam@mint-dell:~$ 
 
-
-
-# lec-10
+🚀 lec-10
 
 ibtisam@mint-dell:~/dockr/lec-10$ ls -a
 .  ..  Dockerfile  .dockerignore  package.json  src
@@ -316,9 +297,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS      
 2b3190fc015b   node-img   "docker-entrypoint.s…"   50 minutes ago   Up 50 minutes   8000/tcp, 0.0.0.0:4050->8080/tcp   node2
 28b99a95345e   node-img   "docker-entrypoint.s…"   54 minutes ago   Up 54 minutes   0.0.0.0:4040->8000/tcp             node1
 
-
-
-# lec-12 q2
+🚀 lec-12 q2
 
 ibtisam@mint-dell:~/dockr/lec-12/q2$ ls
 Dockerimage  package.json  server.js
@@ -349,9 +328,7 @@ ibtisam@mint-dell:~/dockr/lec-12/q2$ docker exec -it server1 /bin/sh
 node_modules       package-lock.json  package.json       server.js
 /usr/src/app # 
 
-
-
-# lec-12 q3
+🚀 lec-12 q3
 
 ibtisam@mint-dell:~/dockr/lec-12/q2$ docker run --rm --name nginx -d -p 8000:127.0.0.1:8081/tcp nginx
 docker: invalid IP address: 8000.
@@ -364,9 +341,7 @@ ibtisam@mint-dell:~/dockr/lec-12/q2$ docker port nginx
 8081/tcp -> 127.0.0.1:80
 ibtisam@mint-dell:~/dockr/lec-12/q2$ 
 
-
-
-# Docker volume path in base machine (docker area)
+🚀 Docker volume path in base machine (docker area)
 
 ibtisam@mint-dell:~/dockr/lec-12/q2$ sudo ls /var/lib/docker/image/overlay2/imagedb/metadata/sha256
 ibtisam@mint-dell:~/dockr/lec-12/q2$ sudo ls /var/lib/docker/image/overlay2/imagedb/content/sha256
@@ -414,9 +389,7 @@ drwx------  2 root root 4096 Aug 10 01:24 swarm
 drwx------  2 root root 4096 Sep 25 15:47 tmp
 drwx-----x  2 root root 4096 Sep 22 22:10 volumes
 
-
-
-# Volume
+🚀 Volume
 
 ibtisam@mint-dell:~/dockr/lec-14$ docker volume create my-vol
 my-vol
@@ -500,9 +473,7 @@ this is from con1, vol-1
 this is from vol-2 con2
 /vol # 
 
-
-
-# docker bind
+🚀 docker bind
 
 ibtisam@mint-dell:~/dockr$ mkdir bind
 ibtisam@mint-dell:~/dockr$ cd bind
@@ -567,10 +538,7 @@ ibtisam@mint-dell:~/dockr/lec-10$ code .
 ibtisam@mint-dell:~/dockr/lec-10$ curl http://localhost:6500
 Hello ibtisam, my loveibtisam@mint-dell:~/dockr/lec-10$ 
 
-
-
-
-# docker multi-stage # lec-16
+🚀 docker multi-stage # lec-16
 
 ibtisam@mint-dell:~/dockr/lec-16$ ls -a
 .  ..  Dockerfile  .dockerignore  package.json  src
@@ -619,9 +587,7 @@ ibtisam@mint-dell:~/dockr/lec-16$ docker run -it -d --name dev -p 8910:8000 --mo
 ibtisam@mint-dell:~/dockr/lec-16$ curl http://localhost:8910
 Hello sweetheartibtisam@mint-dell:~/dockr/lec-16$ Change reflected as it’s dev, nodemon dependencies are installed.
 
-
-
-# docker compose # lec-17
+🚀 docker compose # lec-17
 
 MY_ENV=prod
 docker build -t node:$prod --target $prod .
@@ -710,9 +676,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS      
 c34738609434   node:xyz   "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes   8000/tcp, 0.0.0.0:7911->9600/tcp   lec-17-my-app-1
 ibtisam@mint-dell:~/dockr/lec-10$ 
 
-
-
-# docker compose # lec-17 02
+🚀 docker compose # lec-17 02
 
 ibtisam@mint-dell:~/dockr/lec-17/02$ pwd
 /home/ibtisam/dockr/lec-17/02
@@ -784,9 +748,7 @@ MY_PORT=6665
 ibtisam@mint-dell:~/dockr/lec-17/02$ curl http://localhost:7911
 Hello sweetheart ibtisam@mint-dell:~/dockr/lec-17/02$ 
 
-
-
-# docker data container # lec-18
+🚀 docker data container # lec-18
 
 ibtisam@mint-dell:~/dockr$ docker create -v /dbdata --name lec-18 postgres:13-alpine /bin/true
 Unable to find image 'postgres:13-alpine' locally
@@ -822,7 +784,7 @@ db1.txt
 this is form db1
 /dbdata # exit
 
-#ENTRYPOINT is overridden
+🚀 ENTRYPOINT is overridden
 
 ibtisam@mint-dell:~/k8s/10-1$ docker run --name abc --entrypoint echo nginx ibtisam
 ibtisam
@@ -840,9 +802,7 @@ RUN echo "this is ibtisam"
 ENTRYPOINT [ "sleep" ]
 CMD [ "10" ]
 
-
-
-10/13/24
+🚀 10/13/24
 
 ibtisam@mint-dell:~/dockr$ docker run -it -d ubuntu /bin/sh
 3d41cc85b2b8c3aea183df7715cb419ce8d7b177cf0188d4221b9b06d3fbcd92
