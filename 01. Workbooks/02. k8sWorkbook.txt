@@ -1,4 +1,4 @@
-# 🚀 Setting up different tools:
+🚀 Setting up different tools:
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
@@ -937,7 +937,6 @@ Forwarding from [::1]:7575 -> 8080
 Handling connection for 7575
 
 🚀 Jobs & cron jobs
-
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 10.job.yaml
 job.batch/test-job created
