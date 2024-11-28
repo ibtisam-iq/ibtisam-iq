@@ -15,7 +15,7 @@ Kind
 https://kind.sigs.k8s.io/ 							/usr/local/bin/
 systemctl --user status/start/enable/stop/kill docker-desktop	
 kind create/delete cluster [flags]
---config string       		path to a kind config file
+--config string       		  path to a kind config file
 -h, --help                	help for cluster
     --image string        	node docker image to use for booting the cluster
 -n, --name string         	cluster name, overrides KIND_CLUSTER_NAME, config (default kind)
@@ -95,68 +95,68 @@ kubectl create/apply/replace/run/expose/rollout/port-forward/config/taint/label/
 
 -f, --filename=[]
 --force
---dry-run='' 			Must be "none", "server", or "client".
+--dry-run='' 			   Must be "none", "server", or "client".
 -o, --output=''			'yaml' or 'json'				--dry-run=client -o yaml > filename
 -w, --watch=false
 -n, --namespace=[]
--l, --labels='':		            Comma separated labels to apply to the pod. Will override previous values.
+-l, --labels='':		              Comma separated labels to apply to the pod. Will override previous values.
 --edit=false	            create	Edit the API resource before creating
---save-config			            If true, the configuration of the current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
+--save-config			                If true, the configuration of the current object will be saved in its annotation. Otherwise, the annotation will be unchanged. This flag is useful when you want to perform kubectl apply on this object in the future.
 --annotations=[]:	        run	    Annotations to apply to the pod.
 --attach=false:		                If true, wait for the Pod to start running, and then attach to the Pod as if 'kubectl attach ...' were called. Default false, unless '-i/--stdin' is set, in which case the default is true. With '--restart=Never' the exit code of the container process is returned.
---command=false:		            If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default. --command -- sleep 3600
---env=[]:			                Environment variables to set in the container.
+--command=false:		              If true and extra arguments are present, use them as the 'command' field in the container, rather than the 'args' field which is the default. --command -- sleep 3600
+--env=[]:			                    Environment variables to set in the container.
 --expose=false		                If true, create a ClusterIP service associated with the pod.  Requires `--port`.
 --image='':		                    The image for the container to run.
---port='':			                The port that this container exposes.
---privileged=false:	                If true, run the container in privileged mode.
--q, --quiet=false:	                If true, suppress prompt messages.
---restart='Always':	                The restart policy for this Pod.  Legal values [Always, OnFailure, Never].
+--port='':			                  The port that this container exposes.
+--privileged=false:	              If true, run the container in privileged mode.
+-q, --quiet=false:	              If true, suppress prompt messages.
+--restart='Always':	              The restart policy for this Pod.  Legal values [Always, OnFailure, Never].
 --rm=false:		                    If true, delete the pod after it exits.  Only valid when attaching to the container, e.g. with '--attach' or with '-i/--stdin'.
--i, --stdin=false:	                Keep stdin open on the container in the pod, even if nothing is attached.
--t, --tty=false:		            Allocate a TTY for the container in the pod.
---cluster-ip='':		    expose  ClusterIP to be assigned to the service. Leave empty to auto-allocate, or set to 'None' to create a headless service.
---external-ip='':		            Additional external IP address (not managed by Kubernetes) to accept for the service.
---load-balancer-ip='':	            IP to assign to the LoadBalancer. If empty, an ephemeral IP will be created and used (cloud-provider specific).
---name='':				            The name for the newly created object.
---port='':				            The port that the service should serve on. Copied from the resource being exposed, if unspecified
---protocol='':			            The network protocol for the service to be created. Default is 'TCP'.
---selector='':			            A label selector to use for this service. Only equality-based selector requirements are supported. If empty (the default) infer the selector from the replication controller or replica set.)
---target-port='':		            Name or number for the port on the container that the service should direct traffic to. Optional.
---type='':				            Type for this service: ClusterIP, NodePort, LoadBalancer, or ExternalName. Default is 'ClusterIP'.
+-i, --stdin=false:	              Keep stdin open on the container in the pod, even if nothing is attached.
+-t, --tty=false:		              Allocate a TTY for the container in the pod.
+--cluster-ip='':		      expose  ClusterIP to be assigned to the service. Leave empty to auto-allocate, or set to 'None' to create a headless service.
+--external-ip='':		              Additional external IP address (not managed by Kubernetes) to accept for the service.
+--load-balancer-ip='':	          IP to assign to the LoadBalancer. If empty, an ephemeral IP will be created and used (cloud-provider specific).
+--name='':				                The name for the newly created object.
+--port='':				                The port that the service should serve on. Copied from the resource being exposed, if unspecified
+--protocol='':			              The network protocol for the service to be created. Default is 'TCP'.
+--selector='':			              A label selector to use for this service. Only equality-based selector requirements are supported. If empty (the default) infer the selector from the replication controller or replica set.)
+--target-port='':		              Name or number for the port on the container that the service should direct traffic to. Optional.
+--type='':				                Type for this service: ClusterIP, NodePort, LoadBalancer, or ExternalName. Default is 'ClusterIP'.
 
 kubectl get/describe/delete/edit/exec/logs/set
 
--A, --all-namespaces=false	        If present, list the requested object(s) across all namespaces.
+-A, --all-namespaces=false	      If present, list the requested object(s) across all namespaces.
 -n, --namespace=[]
--f, --filename=[]		            Filename, directory, or URL to files identifying the resource to get from a server.
+-f, --filename=[]		              Filename, directory, or URL to files identifying the resource to get from a server.
 --no-headers=false		            When using the default or custom-column output format, don't print headers (default print headers).
--o, --output=''			            'wide'
--l, --selector=''		            Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
---show-kind=false		            If present, list the resource type for the requested object(s).
+-o, --output=''			              'wide'
+-l, --selector=''		              Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
+--show-kind=false		              If present, list the resource type for the requested object(s).
 --show-labels=false		            When printing, show all labels as the last column (default hide labels column)
 -w, --watch=false	        get	    After listing/getting the requested object, watch for changes.
 --watch-only=false		            Watch for changes to the requested object(s), without listing/getting first.
 --all=false		            del	    Delete all resources, in the namespace of the specified resource types.
--force=false			            If true, immediately remove resources from API and bypass graceful deletion.
---grace-period=-1		            Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
+-force=false			                If true, immediately remove resources from API and bypass graceful deletion.
+--grace-period=-1		              Period of time in seconds given to the resource to terminate gracefully. Ignored if negative. Set to 1 for immediate shutdown. Can only be set to 0 when --force is true (force deletion).
 --ignore-not-found=false:	        Treat "resource not found" as a successful delete. Defaults to "true" when --all is specified.
 -i, --interactive=false:	        If true, delete resource only when the user confirms.
---now=false:			            If true, resources are signaled for immediate shutdown (same as --grace-period=1).
---timeout=0s:			            The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
---wait=true:			            If true, wait for resources to be gone before returning. This waits for finalizers.
---save-config=false	        edit
--c, --container=''	        exec	Container name. If omitted, use the kubectl.kubernetes.io/default-container annotation for selecting the container to be attached or the first container in the pod will be chosen
+--now=false:			                If true, resources are signaled for immediate shutdown (same as --grace-period=1).
+--timeout=0s:			                The length of time to wait before giving up on a delete, zero means determine a timeout from the size of the object
+--wait=true:			                If true, wait for resources to be gone before returning. This waits for finalizers.
+--save-config=false	      edit
+-c, --container=''	      exec	  Container name. If omitted, use the kubectl.kubernetes.io/default-container annotation for selecting the container to be attached or the first container in the pod will be chosen
 -q, --quiet=false:		            Only print output from the remote session
 -i, --stdin=false:		            Pass stdin to the container
--t, --tty=false:			        Stdin is a TTY
---all-containers=false	    logs	Get all containers' logs in the pod(s).
+-t, --tty=false:			            Stdin is a TTY
+--all-containers=false	  logs	  Get all containers' logs in the pod(s).
 -c, --container=''		            Print the logs of this container
 -f, --follow=false		            Specify if the logs should be streamed.
---max-log-requests=5:		        Specify maximum number of concurrent logs to follow when using by a selector. Defaults to 5.
+--max-log-requests=5:		          Specify maximum number of concurrent logs to follow when using by a selector. Defaults to 5.
 --pod-running-timeout=20s	        The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
---prefix=false			            Prefix each log line with the log source (pod name and container name)
--p, --previous=false		        If true, print the logs for the previous instance of the container in a pod if it exists.
+--prefix=false			              Prefix each log line with the log source (pod name and container name)
+-p, --previous=false		          If true, print the logs for the previous instance of the container in a pod if it exists.
 --timestamps=false		            Include timestamps on each line in the log output
 --record=true
 --selector app=frontend,env=dev --no-headers | wc -l
