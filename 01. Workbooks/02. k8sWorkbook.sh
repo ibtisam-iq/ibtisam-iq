@@ -1,4 +1,4 @@
-🚀 Setting up different tools:
+# 🚀 Setting up different tools:
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
