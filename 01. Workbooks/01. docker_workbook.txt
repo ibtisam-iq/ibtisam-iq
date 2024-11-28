@@ -1,4 +1,7 @@
-ibtisam@mint-dell:~$ docker run -it --name con1 busybox (/bin/sh optional), just print messages; echo “sam”; use alpine for softwares.
+# busybox vs alpine
+
+
+ibtisam@mint-dell:~$ docker run -it --name con1 busybox
 / # uname -a
 Linux b4dd6aca6a27 6.6.32-linuxkit #1 SMP PREEMPT_DYNAMIC Thu Jun 13 14:14:43 UTC 2024 x86_64 GNU/Linux
 / # cat /etc/os-release
@@ -6,9 +9,7 @@ cat: can't open '/etc/os-release': No such file or directory
 / # neofetch
 sh: neofetch: not found
 
-
-ibtisam@mint-dell:~$ docker run -it --name con2 alpine	here /bin/sh isn’t mandatory to pass -it, so -it works properly.	
-/ # uname -a
+ibtisam@mint-dell:~$ docker run -it --name con2 alpine
 Linux 32365ae0d4c4 6.6.32-linuxkit #1 SMP PREEMPT_DYNAMIC Thu Jun 13 14:14:43 UTC 2024 x86_64 Linux
 / # neofetch
 /bin/sh: neofetch: not found
@@ -20,6 +21,7 @@ PRETTY_NAME="Alpine Linux v3.20"
 HOME_URL="https://alpinelinux.org/"
 BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
 / # exit
+
 ibtisam@mint-dell:~$ docker ps -a
 CONTAINER ID   IMAGE     COMMAND     CREATED          STATUS                      PORTS     NAMES
 32365ae0d4c4   alpine    "/bin/sh"   38 minutes ago   Exited (0) 37 seconds ago             con2
@@ -59,10 +61,11 @@ sys
 tmp
 usr
 var
-ibtisam@mint-dell:~$ 
+ibtisam@mint-dell:~$
+
 ibtisam@mint-dell:~$ docker exec -it con2 ls
 bin    dev    etc    home   lib    media  mnt    opt    proc   root   run    sbin   srv    sys    tmp    usr    var
-ibtisam@mint-dell:~$ docker exec -it con2 /bin/sh				here /bin/sh becomes mandatory to pass -it, so -it works properly
+ibtisam@mint-dell:~$ docker exec -it con2 /bin/sh				# here /bin/sh becomes mandatory to pass -it, so -it works properly
 / # 
 / # exit
 ibtisam@mint-dell:~$ docker ps -a
@@ -70,6 +73,7 @@ CONTAINER ID   IMAGE     COMMAND     CREATED             STATUS                 
 32365ae0d4c4   alpine    "/bin/sh"   About an hour ago   Up 15 minutes                           con2	exit, but running; power of exec
 b4dd6aca6a27   busybox   "sh"        About an hour ago   Exited (137) 16 minutes ago             con1
 ibtisam@mint-dell:~$ 
+
 
 
 # -d # docker top
@@ -84,7 +88,9 @@ UID                 PID                 PPID                C                   
 root                919                 897                 0                   07:10               ?                   00:00:00            sh
 ibtisam@mint-dell:~$
 
-#ubuntu vs alpine size; sh -c
+
+
+# ubuntu vs alpine size; sh -c
 
 ibtisam@mint-dell:~$ docker images
 REPOSITORY                       TAG                  IMAGE ID       CREATED         SIZE
@@ -100,7 +106,9 @@ user	0m0.076s
 sys	0m0.059s
 ibtisam@mint-dell:~$ 
 
-#COMMAND				docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+
+# COMMAND				docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 ibtisam@mint-dell:~$ docker ps -a
 CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                      PORTS     NAMES
@@ -161,6 +169,8 @@ To try something more ambitious, you can run an Ubuntu container with:
 
 ibtisam@mint-dell:~$ 
 
+
+
 # bash vs sh vs /bin/bash vs /bin/sh
 
 ibtisam@mint-dell:~$ docker run -it ubuntu bash
@@ -184,6 +194,8 @@ root
 # exit
 ibtisam@mint-dell:~$
 
+
+
 # ubuntu image based container
 
 The issue is that your container abc keeps exiting immediately after starting. This happens because the container's default command (/bin/bash) is completing and exiting, leaving the container in a stopped state.
@@ -204,6 +216,8 @@ ibtisam@mint-dell:~$ docker exec -it abc /bin/bash
 root@167b14d4409b:/# exit
 exit
 ibtisam@mint-dell:~$ 
+
+
 
 # docker status
 
@@ -228,6 +242,8 @@ ibtisam@mint-dell:~$ systemctl status docker
      Active: active (running) since Sun 2024-09-22 22:10:36 PKT; 1 day 17h ago
 TriggeredBy: ● docker.socket
        
+
+
 # port mapping
 
 ibtisam@mint-dell:~$ docker run -d -it --name abc -p 8080:80 nginx
@@ -244,7 +260,9 @@ ibtisam@mint-dell:~$ netstat -tulpn | grep 8080
 tcp6       0      0 :::8080                 :::*                    LISTEN      -                   
 ibtisam@mint-dell:~$ 
 
-#lec-10
+
+
+# lec-10
 
 ibtisam@mint-dell:~/dockr/lec-10$ ls -a
 .  ..  Dockerfile  .dockerignore  package.json  src
@@ -300,7 +318,7 @@ CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS      
 
 
 
-#lec-12 q2
+# lec-12 q2
 
 ibtisam@mint-dell:~/dockr/lec-12/q2$ ls
 Dockerimage  package.json  server.js
@@ -331,7 +349,9 @@ ibtisam@mint-dell:~/dockr/lec-12/q2$ docker exec -it server1 /bin/sh
 node_modules       package-lock.json  package.json       server.js
 /usr/src/app # 
 
-#lec-12 q3
+
+
+# lec-12 q3
 
 ibtisam@mint-dell:~/dockr/lec-12/q2$ docker run --rm --name nginx -d -p 8000:127.0.0.1:8081/tcp nginx
 docker: invalid IP address: 8000.
@@ -343,6 +363,8 @@ curl: (52) Empty reply from server
 ibtisam@mint-dell:~/dockr/lec-12/q2$ docker port nginx
 8081/tcp -> 127.0.0.1:80
 ibtisam@mint-dell:~/dockr/lec-12/q2$ 
+
+
 
 # Docker volume path in base machine (docker area)
 
@@ -392,7 +414,9 @@ drwx------  2 root root 4096 Aug 10 01:24 swarm
 drwx------  2 root root 4096 Sep 25 15:47 tmp
 drwx-----x  2 root root 4096 Sep 22 22:10 volumes
 
-#Volume
+
+
+# Volume
 
 ibtisam@mint-dell:~/dockr/lec-14$ docker volume create my-vol
 my-vol
@@ -544,7 +568,9 @@ ibtisam@mint-dell:~/dockr/lec-10$ curl http://localhost:6500
 Hello ibtisam, my loveibtisam@mint-dell:~/dockr/lec-10$ 
 
 
-# docker multi-stage #lec-16
+
+
+# docker multi-stage # lec-16
 
 ibtisam@mint-dell:~/dockr/lec-16$ ls -a
 .  ..  Dockerfile  .dockerignore  package.json  src
@@ -593,6 +619,8 @@ ibtisam@mint-dell:~/dockr/lec-16$ docker run -it -d --name dev -p 8910:8000 --mo
 ibtisam@mint-dell:~/dockr/lec-16$ curl http://localhost:8910
 Hello sweetheartibtisam@mint-dell:~/dockr/lec-16$ Change reflected as it’s dev, nodemon dependencies are installed.
 
+
+
 # docker compose # lec-17
 
 MY_ENV=prod
@@ -626,7 +654,6 @@ ibtisam@mint-dell:~/dockr/lec-16$ docker run -it -d --name con2 -e PORT=$MY_PORT
 ibtisam@mint-dell:~/dockr/lec-16$ curl http://localhost:7700
 Hello sweetheartibtisam@mint-dell:~/dockr/lec-16$ 
 
-
 Docker Compose is a tool for defining and running multi-container Docker applications. It allows you to manage a group of services (containers) together using a YAML file (docker-compose.yml).
 
 ibtisam@mint-dell:~/dockr/lec-17$ docker-compose
@@ -648,7 +675,6 @@ node                             abc                  33b8a107264f   2 hours ago
 ibtisam@mint-dell:~/dockr/lec-17$ pwd
 /home/ibtisam/dockr/lec-17
 ibtisam@mint-dell:~/dockr/lec-17$ docker compose up -d
-                                                                                                                              6.0s 
 ibtisam@mint-dell:~/dockr/lec-17$ docker compose ps -a
 WARN[0000] /home/ibtisam/dockr/lec-17/docker-compose.yml: `version` is obsolete 
 NAME              IMAGE      COMMAND                  SERVICE   CREATED          STATUS          PORTS
@@ -672,11 +698,10 @@ services:
       - $PWD/src:/app/src
     environment:
       - PORT=$MY_PORT
-  ibtisam@mint-dell:~/dockr/lec-17$ 
-  ibtisam@mint-dell:~/dockr/lec-17$ cat .env 
+ibtisam@mint-dell:~/dockr/lec-17$ 
+ibtisam@mint-dell:~/dockr/lec-17$ cat .env 
 MY_ENV=xyz
 MY_PORT=9600ibtisam@mint-dell:~/dockr/lec-17$ 
-
 
 ibtisam@mint-dell:~/dockr/lec-10$ docker compose ps -a
 no configuration file provided: not found
@@ -684,6 +709,7 @@ ibtisam@mint-dell:~/dockr/lec-10$ docker ps -a
 CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS          PORTS                              NAMES
 c34738609434   node:xyz   "docker-entrypoint.s…"   10 minutes ago   Up 10 minutes   8000/tcp, 0.0.0.0:7911->9600/tcp   lec-17-my-app-1
 ibtisam@mint-dell:~/dockr/lec-10$ 
+
 
 
 # docker compose # lec-17 02
@@ -758,6 +784,8 @@ MY_PORT=6665
 ibtisam@mint-dell:~/dockr/lec-17/02$ curl http://localhost:7911
 Hello sweetheart ibtisam@mint-dell:~/dockr/lec-17/02$ 
 
+
+
 # docker data container # lec-18
 
 ibtisam@mint-dell:~/dockr$ docker create -v /dbdata --name lec-18 postgres:13-alpine /bin/true
@@ -811,6 +839,8 @@ FROM nginx
 RUN echo "this is ibtisam"
 ENTRYPOINT [ "sleep" ]
 CMD [ "10" ]
+
+
 
 10/13/24
 

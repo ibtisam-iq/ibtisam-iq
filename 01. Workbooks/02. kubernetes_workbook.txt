@@ -1,4 +1,6 @@
-Setting up different tools:
+# Setting up different tools:
+
+
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME           CLUSTER        AUTHINFO       NAMESPACE
@@ -53,7 +55,6 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-clusters
 NAME
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-
 Cluster: The actual Kubernetes environment where your resources are deployed. Clusters tell kubectl where to send your commands (which environment you're managing).
 Context: A combination of cluster, user, and namespace that defines the current environment for kubectl commands. Contexts make it easier to switch between different environments (clusters and users).
 
@@ -82,7 +83,11 @@ ibtisam@mint-dell:~/k8s/10-1$ pwd
 /home/ibtisam/k8s/10-1
 
 ibtisam@mint-dell:~/k8s/10-1$ cat /home/ibtisam/k8s/nectar.yaml
+
+
 # kind-cluster-config.yaml
+
+
 
 apiVersion: kind.x-k8s.io/v1alpha4   # Specifies the Kind API version to use
 kind: Cluster                        # Declares that this is a Kind Cluster configuration
@@ -148,7 +153,9 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl config get-contexts
 CURRENT   NAME   CLUSTER   AUTHINFO   NAMESPACE
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-setting up pod
+
+
+# setting up pod
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml
@@ -174,7 +181,7 @@ pod/abc created
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get po -o wide
 NAME   READY   STATUS              RESTARTS   AGE   IP       NODE              NOMINATED NODE   READINESS GATES
 abc    0/1     ContainerCreating   0          19s   <none>   ibtisam-worker2   <none>           <none>
-	    No. of containers
+
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get po -o wide -w
 NAME   READY   STATUS              RESTARTS   AGE   IP       NODE              NOMINATED NODE   READINESS GATES
 abc    0/1     ContainerCreating   0          31s   <none>   ibtisam-worker2   <none>           <none>
@@ -224,7 +231,9 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl delete po abc
 pod "abc" deleted
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-init container
+
+
+# init container
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml
@@ -243,7 +252,9 @@ NAME   READY   STATUS    RESTARTS   AGE    IP           NODE             NOMINAT
 init   1/1     Running   0          116s   10.244.3.3   ibtisam-worker   <none>           <none>
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-#rc,rs,deploy
+
+
+# rc,rs,deploy
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get po,rc,rs,deploy -o wide
 NAME                          READY   STATUS    RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
@@ -266,7 +277,7 @@ replicaset.apps/rs7def              3         3         3       4m25s   rs7nginx
 
 NAME                     READY   UP-TO-DATE   AVAILABLE   AGE     CONTAINERS   IMAGES   SELECTOR
 deployment.apps/dp7xyz   3/3     3            3           4m24s   dp7nginx     nginx    app=database
-				    Number of pods or containers?
+
 ibtisam@mint-dell:~/k8s/10-1$ kubectl describe rc rc7abc
 Name:         rc7abc
 Namespace:    default
@@ -392,7 +403,9 @@ NAME                     READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS   IMA
 deployment.apps/dp7xyz   5/5     5            5           84m   dp7nginx     nginx    app=database
 ibtisam@mint-dell:~/k8s/10-1$ 
 
-#rollout
+
+
+# rollout
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl get deploy
 No resources found in default namespace.
@@ -533,7 +546,8 @@ deployment.apps/dp7xyz   3/3     3            3           52m   nginx        ngi
 ibtisam@mint-dell:~/k8s/10-1$ 
 
 
-#blue-green deployment (port forwarding is optional)
+
+# blue-green deployment (port forwarding is optional)
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml  071.b-g-dep.yaml  072.can.dep.yaml  07.rc-rs-dep.yaml
@@ -652,7 +666,8 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl port-forward service/b-g-svc 7080:3741 > /
 ibtisam@mint-dell:~/k8s/10-1$ 
 
 
-setting up canary deployment (no port forwarding)
+
+# setting up canary deployment (no port forwarding)
 
 ibtisam@mint-dell:~/k8s/10-1$ ls
 01.kind-1.yaml  02.sin-con.yaml  03.side-con.yaml  04.amb-con.yaml  05.init-con.yaml  06.po.yaml  071.b-g-dep.yaml  072.can.dep.yaml  07.rc-rs-dep.yaml  08.svc.yaml
@@ -763,6 +778,8 @@ root@ibtisam-worker:/# exit
 exit
 
 ibtisam@mint-dell:~/k8s/10-1$ 
+
+
 
 # namespace, resource quota
 
@@ -878,7 +895,9 @@ No resources found in default namespace.
 ibtisam@mint-dell:~/k8s/10-1$ kubectl delete ns ibtisam		# deleted everything created in that namespace
 namespace "ibtisam" deleted
 
-#services, ClusterIP & NodePort
+
+
+# services, ClusterIP & NodePort
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 08.svc.yaml
 service/c-ip-svc created
@@ -938,7 +957,9 @@ Forwarding from 127.0.0.1:7575 -> 8080
 Forwarding from [::1]:7575 -> 8080
 Handling connection for 7575
 
-Jobs & cron jobs
+
+
+# Jobs & cron jobs
 
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 10.job.yaml
@@ -1054,6 +1075,8 @@ Events:
 ibtisam@mint-dell:~/k8s/10-1$ 
 
 
+
+
 # command & args
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f test.po.yaml
@@ -1139,7 +1162,9 @@ ibtisam@mint-dell:~/k8s/10-1$ curl localhost:6969
 
 </div>ibtisam@mint-dell:~/k8s/10-1$ 
 
-#env, config map, secret
+
+
+# env, config map, secret
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 11.cm-sec.yaml
 configmap/abc-cm unchanged
@@ -1202,6 +1227,8 @@ APP_COLOR
 /etc/config # cat APP_COLOR 
 red/etc/config #  
 
+
+
 # YAML sh -c
 
 command: ['sh', '-c', 'echo $APP_COLOR', 'ls -l /etc/config', 'cat /etc/config/APP_COLOR', 'sleep 3600 && echo $PWD'] so this is also wrong?
@@ -1246,6 +1273,9 @@ Use kubectl create --save-config when you prefer to use create but still want to
 Example of Applying and Creating Resources:
 kubectl apply -f resource.yaml: Applies the resource from the YAML file and tracks changes automatically.
 kubectl create -f resource.yaml --save-config: Creates the resource and saves its configuration for future updates using apply.
+
+
+
 # security contexts
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 06.po.sec-con.yaml
@@ -1291,7 +1321,9 @@ whoami: unknown uid 1000
 command terminated with exit code 1
 
 
-Service account
+
+
+# Service account
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl apply -f 12.sa-r-rb.yaml
 pod/dashboard-app created
@@ -1329,6 +1361,8 @@ NAME               SECRETS   AGE
 dashboard-app-sa   0         10m
 default            0         2d21h
 ibtisam@mint-dell:~/k8s/10-1$ 
+
+
 
 # taints & toleration # node selector # node affinity
 
@@ -1377,8 +1411,6 @@ ibtisam@mint-dell:~/k8s/10-1$ kubectl describe node ibtisam-worker | grep -i tai
 Taints:             <none>
 
 The node is tainted, but the desired pod is scheduled on undesired node.
-
-
 
 ibtisam@mint-dell:~/k8s/10-1$ kubectl taint node ibtisam-worker flower=rose:NoSchedule
 node/ibtisam-worker tainted
@@ -1448,7 +1480,6 @@ NAME              READY   STATUS    RESTARTS   AGE   IP            NODE
 ha-po             0/1     Pending   0          40m   <none>        <none>            
 nodeselector-po   1/1     Running   0          40m   10.244.2.10   ibtisam-worker2   one is tainted, 2nd has got the desired labels. 
 
-
 ibtisam@mint-dell:~/k8s/10-1$ kubectl label node ibtisam-worker2 cpu-
 node/ibtisam-worker2 unlabeled
 ibtisam@mint-dell:~/k8s/10-1$ kubectl label node ibtisam-worker cpu-
@@ -1480,6 +1511,8 @@ plain-po          1/1     Running   0          42s   10.244.2.15   ibtisam-worke
 sa-po             1/1     Running   0          41s   10.244.3.10   ibtisam-worker    <none>           <none>
 tol-ha-po         0/1     Pending   0          41s   <none>        <none>            <none>           <none>
 tol-po            1/1     Running   0          42s   10.244.2.14   ibtisam-worker2   <none>           <none>
+
+
 
 # Monitoring & Debugging
 
@@ -1519,6 +1552,8 @@ ibtisam-control-plane2   383m         9%     404Mi           21%
 ibtisam-worker           95m          2%     112Mi           5%        
 ibtisam-worker2          114m         2%     184Mi           9%        
 ibtisam@mint-dell:~/k8s/10-1$ 
+
+
 
 # ingress 
 
