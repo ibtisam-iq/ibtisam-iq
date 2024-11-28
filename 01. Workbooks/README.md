@@ -8,7 +8,7 @@ This repository contains **real console commands and outputs** from my hands-on 
 
 ## What's Inside?  
 - `dockerWorkbook.txt`  
-- `kubernetesWorkbook.txt`  
+- `k8sWorkbook.txt`  
 
 Each file demonstrates practical workflows and real-time outputs.  
 
