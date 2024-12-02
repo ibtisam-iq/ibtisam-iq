@@ -126,7 +126,7 @@ git branch -M master main		--move --force	#Renames the branch and forces the ren
 git branch -c <master> <main>	--copy			#Creates a new branch and copies the history
 git branch -d <2nd>             --delete        #deleted after merging at local # make sure you checkout to any other branch to delete <2nd> # make sure to delete remote branch as well
 git checkout <branch_to_switch>
-git merge <branch name want to merge>           #switch to main branch & then merge
+git merge <branch name want to merge>           #switch to main branch first & then merge
 git merge origin/main							#merge changes from the remote main branch into your current branch.
 
 
