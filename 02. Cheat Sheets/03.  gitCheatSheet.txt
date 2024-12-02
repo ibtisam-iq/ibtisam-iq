@@ -79,9 +79,10 @@ git reset --mixed <commit>						#reset the commit, but remove the changes from t
 git reset --hard <commit>						#reset the commit, and remove the changes from the stagged and the working directory
 git revert <commit>								#undo the commit, but keep the changes in the stagged area # A new commit is created that undoes the changes made in the specified commit.
 
-case 6
-git clean -n 									#dry run, delete all untracked files 
-git clean -f									#forcefully
+Case 4 Clean Untracked Files
+git clean -n 									#dry run, shows a preview of untracked files and directories that would be removed by git clean -f
+git clean -f									#deletes untracked files from the working directory. #Note: This will delete files that are not tracked by Git, but it will not delete files that are tracked by Git, even if they are not in the current commit. 
+git clean -f -d									#if you want to delete files that are tracked by Git, you can use git clean -fd.
 
 
 
