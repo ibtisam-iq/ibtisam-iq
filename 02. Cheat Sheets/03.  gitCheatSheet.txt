@@ -64,10 +64,9 @@ git commit -m "msg"				--message
 git commit -m "msg" --dry-run 					#dry run
 
 Case 1
-git checkout <file>			OR					#you just stagged a file (not commited yet), and add some text (not stagged yet), revert some text added.
-git checkout -f									#to discard/revert changes in the working directory before staging all of these files
-
-git restore <file>         						#recover the deleted staged or commited file                     
+git checkout <file>		Deprecated	OR			#you just stagged a file (not commited yet), and add some text (not stagged yet), revert some text added. #If you've made changes to a file but haven't staged or committed them, and you want to discard those changes.
+git restore <file>         						#recover the deleted staged or commited file
+git restore <file>                      		#Similar to git checkout <file>, reverts uncommitted changes in the specified file to the state of the latest commit.
 
 case 2
 git reset <filename> or git reset .     OR      #to remove from stagged area
@@ -130,8 +129,6 @@ git checkout <branch_to_switch> 				#to switch to another branch
 git checkout -b feature/new-feature 			#to create a new branch and switch to it simultaneouly. # The new branch feature/new-feature will be based on your current branch.
 git checkout -b feature/new-feature main		#The new branch feature/new-feature will be based on main, regardless of which branch you are currently on.
 git switch -c feature/new-feature main	--create #The new branch feature/new-feature will be based on main, regardless of which branch
-
-
 
 
 git merge <branch name want to merge>           #switch to main branch first & then merge
