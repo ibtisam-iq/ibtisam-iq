@@ -103,7 +103,7 @@ git log --no-merge
 git log -2										#last 2 commits
 git log -p -2									#last 2 commits with diff
 git log --stat									#summary of changes
-git log --oneline
+git log --oneline 								#one line per commit
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar %s"		#h for tag id, an for author, ar for times ago, s for commit message
 git log -S <function_name>
@@ -117,11 +117,14 @@ git diff --cached
 git checkout <commit ID> -- *					#to check the live changes
 git checkout main -- *							#to get back 
 
-git branch                                      #to check on which branch you are working
+git branch                                      # to check all local branches # to check on which branch you are working
+git branch -a        --all                      #to check all branches
+git branch -r 		 --remote					#to check remote branches
 git branch <2nd>                                #new branch is created
-git branch -m master main						#Renames the branch, but fails if the new branch name already exists
-git branch -M master main						#Renames the branch and forces the rename, overwriting the branch if the new name already exists
-git branch -d <2nd>                             #deleted after merging
+git branch -m <master> <main>	--move			#Renames the branch, but fails if the new branch name already exists
+git branch -M master main		--move --force	#Renames the branch and forces the rename, overwriting the branch if the new name already exists
+git branch -c <master> <main>	--copy			#Creates a new branch and copies the history
+git branch -d <2nd>             --delete        #deleted after merging at local # make sure you checkout to any other branch to delete <2nd> # make sure to delete remote branch as well
 git checkout <branch_to_switch>
 git merge <branch name want to merge>           #switch to main branch & then merge
 git merge origin/main							#merge changes from the remote main branch into your current branch.
