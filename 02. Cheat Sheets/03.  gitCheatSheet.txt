@@ -129,7 +129,7 @@ git branch -d <2nd>             --delete        #deleted after merging at local 
 git checkout <branch_to_switch> 				#to switch to another branch
 git checkout -b feature/new-feature 			#to create a new branch and switch to it simultaneouly. # The new branch feature/new-feature will be based on your current branch.
 git checkout -b feature/new-feature main		#The new branch feature/new-feature will be based on main, regardless of which branch you are currently on.
-git switch -c feature/new-feature main			#The new branch feature/new-feature will be based on main, regardless of which branch
+git switch -c feature/new-feature main	--create #The new branch feature/new-feature will be based on main, regardless of which branch
 
 
 
