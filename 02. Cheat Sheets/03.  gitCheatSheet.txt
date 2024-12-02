@@ -60,7 +60,7 @@ git init                                        #to start tracking
 git status
 git add <filename> or git add .                 #to add into stagged area
 git diff --cached								#run it before commit to see what you are about to commit.
-git commit -m "add the message here"
+git commit -m "msg"				--message
 
 Case 1
 git checkout <file>			OR					#you just stagge a file (not commited yet), and add some text (not stagged yet), revert some text added.
