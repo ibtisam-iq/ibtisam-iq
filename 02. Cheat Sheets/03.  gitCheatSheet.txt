@@ -126,7 +126,11 @@ git branch -m <master> <main>	--move			#Renames the branch, but fails if the new
 git branch -M master main		--move --force	#Renames the branch and forces the rename, overwriting the branch if the new name already exists
 git branch -c <master> <main>	--copy			#Creates a new branch and copies the history
 git branch -d <2nd>             --delete        #deleted after merging at local # make sure you checkout to any other branch to delete <2nd> # make sure to delete remote branch as well
-git checkout <branch_to_switch>
+git checkout <branch_to_switch> 				#to switch to another branch
+
+
+
+
 git merge <branch name want to merge>           #switch to main branch first & then merge
 git merge --no-commit <branch name> 			#merge but do not commit
 git rebase <branch name>						#switch to main branch first & then rebase the branch
