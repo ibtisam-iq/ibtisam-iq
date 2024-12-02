@@ -64,7 +64,7 @@ git commit -m "msg"				--message
 git commit -m "msg" --dry-run 					#dry run
 
 Case 1
-git checkout <file>			OR					#you just stagge a file (not commited yet), and add some text (not stagged yet), revert some text added.
+git checkout <file>			OR					#you just stagged a file (not commited yet), and add some text (not stagged yet), revert some text added.
 git checkout -f									#to discard/revert changes in the working directory before staging all of these files
 
 git restore <file>         						#recover the deleted staged or commited file                     
