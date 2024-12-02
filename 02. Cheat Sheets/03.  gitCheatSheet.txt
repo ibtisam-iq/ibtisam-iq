@@ -63,26 +63,21 @@ git diff --cached								#run it before commit to see what you are about to comm
 git commit -m "msg"				--message
 git commit -m "msg" --dry-run 					#dry run
 
-Case 1
+Case 1 Undo Changes to Files 
 git checkout <file>		Deprecated	OR			#you just stagged a file (not commited yet), and add some text (not stagged yet), revert some text added. #If you've made changes to a file but haven't staged or committed them, and you want to discard those changes.
 git restore <file>         						#recover the deleted staged or commited file
 git restore <file>                      		#Similar to git checkout <file>, reverts uncommitted changes in the specified file to the state of the latest commit.
+git restore --worktree <file> 					#Similar to git checkout <file>, but explicitly applies to files in the working directory.
 
-case 2
+Case 2 Undo Staged Changes
 git reset <filename> or git reset .     OR      #to remove from stagged area
 git restore --staged <file>                     #to unstage a file
 
-case 3
-git restore --worktree <file>					#added, but not commit yet, added some text into workspace. to get back stagged area
-
-case4
-git reset --hard                                #to remove from staging area along with workspace
-
-case 5
-git revert <commit_ID>                          #A new commit is created that undoes the changes made by the specified commit.
-git reset --soft HEAD^							#HEAD shows the latest commit of that branch, each branch has its own one.
-git reset --soft HEAD^							#uncommit & discard
-
+Case 3 Undo Commits
+git reset --soft <commit> 						#reset the commit, but keep the changes in the stagged area
+git reset --mixed <commit>						#reset the commit, but remove the changes from the stagged area, but keep the changes in the working directory
+git reset --hard <commit>						#reset the commit, and remove the changes from the stagged and the working directory
+git revert <commit>								#undo the commit, but keep the changes in the stagged area # A new commit is created that undoes the changes made in the specified commit.
 
 case 6
 git clean -n 									#dry run, delete all untracked files 
