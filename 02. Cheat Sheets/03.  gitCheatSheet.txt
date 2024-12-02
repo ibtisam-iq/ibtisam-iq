@@ -121,6 +121,7 @@ git branch -M master main		--move --force	#Renames the branch and forces the ren
 git branch -c <master> <main>	--copy			#Creates a new branch and copies the history
 git branch -d <2nd>             --delete        #deleted after merging at local # make sure you checkout to any other branch to delete <2nd> # make sure to delete remote branch as well
 git checkout <branch_to_switch> 				#to switch to another branch
+git checkout -f <branch_to_switch>	--force		#to switch to another branch forcefully # Forces a checkout, discarding any uncommitted changes in the working directory. # When you need to switch branches but have uncommitted changes you’re willing to lose.
 git checkout -b feature/new-feature 			#to create a new branch and switch to it simultaneouly. # The new branch feature/new-feature will be based on your current branch.
 git checkout -b feature/new-feature main		#The new branch feature/new-feature will be based on main, regardless of which branch you are currently on.
 git switch -c feature/new-feature main	--create #The new branch feature/new-feature will be based on main, regardless of which branch
