@@ -21,8 +21,8 @@ git config --global --list                  #to check all under --global
 git config --global --edit
 
 
-git config pull.rebase false				#merge
-git config pull.rebase true					#rebase
+git config pull.rebase false				# to set pull to fetch and merge # To always merge (default behavior)
+git config pull.rebase true					# to set pull to rebase
 
 ibtisam@mint-dell:~$ cat .gitconfig         # --global
 
@@ -144,8 +144,7 @@ git push origin --delete one					#delete the remote "one" branch
 git fetch origin main
 git pull origin main --rebase					#This flag ensures that your local changes will be applied on top of the changes pulled from the remote branch.
 git push <remote-name> <branch-name>            #upload # git push origin main
-git pull <remote-name> <branch-name>            #download #does not require authentication
-#Use -u when you're pushing a branch for the first time and want to make future git push/git pull commands more convenient.
+git pull <remote-name> <branch-name>            #download #does not require authentication #Use -u when you're pushing a branch for the first time and want to make future git push/git pull commands more convenient.
 git push origin one								#pushed, even there was no "one" branch in github repo. Created & pushed.
 git push origin main --tags
 
