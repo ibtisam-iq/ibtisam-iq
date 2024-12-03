@@ -23,6 +23,8 @@ git config --global --edit
 
 git config pull.rebase false				# to set pull to fetch and merge # To always merge (default behavior)
 git config pull.rebase true					# to set pull to rebase
+git config pull.ff only						# to set pull to fast forward only
+
 
 ibtisam@mint-dell:~$ cat .gitconfig         # --global
 
