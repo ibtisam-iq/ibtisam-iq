@@ -16,10 +16,6 @@
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ibtisamops&show_icons=true&locale=en" alt="ibtisamops" /></p>
 
 ### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=ibtisamops&limit=5&theme=radical&combine_all_yearly_contributions=true)
-
-## 📈 GitHub Stats
-
-![Ibtisam's GitHub stats](https://github-readme-stats.vercel.app/api?username=ibtisamops&show_icons=true&theme=radical)
+![](https://github-contributor-stats.vercel.app/api?username=ibtisamops&limit=5&theme=flat&combine_all_yearly_contributions=true)
 
 
