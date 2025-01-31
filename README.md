@@ -9,13 +9,13 @@ I am **Muhammad Ibtisam**, a **Silver Medalist** with a profound passion for **D
 
 ## 📚 Featured Repositories
 
-### 1. [![SilverOps](https://img.shields.io/badge/-SilverOps-blue?style=for-the-badge)](https://github.com/ibtisamops/SilverOps)
+## [![SilverOps](https://img.shields.io/badge/-SilverOps-green?style=for-the-badge)](https://github.com/ibtisamops/SilverOps)
 A **comprehensive portfolio** showcasing my expertise in **DevOps**, **Cloud technologies**, and **AI-driven automation**. It includes projects for full-stack systems, tool-specific implementations, and AIOps-related projects.
 
-### 2. [![Nectar](https://img.shields.io/badge/-Nectar-green?style=for-the-badge)](https://github.com/ibtisamops/nectar)
+## [![Nectar](https://img.shields.io/badge/-Nectar-green?style=for-the-badge)](https://github.com/ibtisamops/nectar)
 A knowledge base repository containing **in-depth documentation** for various **DevOps tools**. It features 20+ folders, each dedicated to a specific tool, with detailed guides and theoretical insights to aid in mastering the technologies.
 
-### 3. [![Workbooks](https://img.shields.io/badge/-Workbooks-orange?style=for-the-badge)](https://github.com/ibtisamops/workbooks)
+## [![Workbooks](https://img.shields.io/badge/-Workbooks-green?style=for-the-badge)](https://github.com/ibtisamops/workbooks)
 A dedicated repository where I store **console outputs** from tools I’ve mastered during my learning journey. Each tool has its own directory with corresponding console output files, demonstrating my proficiency in these technologies.
 
 ## Connect with Me
