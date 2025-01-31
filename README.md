@@ -80,3 +80,22 @@ A dedicated repository where I store **console outputs** from tools I’ve maste
 </p>
 
 Thank you for visiting my profile! Let's build the future of automation together! 🚀
+
+---
+
+## 📚 Featured Repositories
+
+### <h4><a href="https://github.com/ibtisamops/SilverOps">![SilverOps](https://img.shields.io/badge/-SilverOps-black?style=for-the-badge)</a></h4>
+<p style="font-size: 18px;">A <strong>comprehensive portfolio</strong> showcasing my expertise in <strong>DevOps</strong>, <strong>Cloud technologies</strong>, and <strong>AI-driven automation</strong>. It includes projects for:
+- Full-stack systems
+- Tool-specific implementations
+- AIOps-related research</p>
+
+### <h4><a href="https://github.com/ibtisamops/nectar">![Nectar](https://img.shields.io/badge/-Nectar-black?style=for-the-badge)</a></h4>
+<p style="font-size: 18px;">A knowledge base repository containing <strong>in-depth documentation</strong> for various <strong>DevOps tools</strong>.
+- Features 20+ folders, each dedicated to a specific tool, with detailed guides and theoretical insights to aid in mastering the technologies.</p>
+
+### <h4><a href="https://github.com/ibtisamops/workbooks">![Workbooks](https://img.shields.io/badge/-Workbooks-black?style=for-the-badge)</a></h4>
+<p style="font-size: 18px;">A dedicated repository where I store <strong>console outputs</strong> from tools I’ve mastered during my learning journey.
+- Each tool has its own directory with corresponding console output files, demonstrating my proficiency in these technologies.</p>
+
