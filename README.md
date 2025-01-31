@@ -1,12 +1,11 @@
 <h1 align="center">Hi 👋, I'm Muhammad Ibtisam</h1>
-<h3 align="center">A passionate DevOps Engineer from Pakistan 🇵🇰</h3>
+<h3 align="center">A Passionate DevOps Engineer from Pakistan 🇵🇰</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=ibtisamops&label=Profile%20views&color=0e75b6&style=flat" alt="ibtisamops" /> </p>
 
 ## About Me
 
-I am **Muhammad Ibtisam**, a **Silver Medalist** with a deep passion for transitioning into **DevOps**, **AI-driven automation (AIOps)**, and **cloud technologies**. I am committed to leveraging automation, artificial intelligence, and cutting-edge tools to streamline workflows, enhance system performance, and foster innovation in IT.
-
+I am **Muhammad Ibtisam**, a **Silver Medalist** with a profound passion for **DevOps**, **AI-driven automation (AIOps)**, and **cloud technologies**. My commitment lies in leveraging automation, artificial intelligence, and cutting-edge tools to streamline workflows, enhance system performance, and foster innovation in IT.
 
 <h3 align="left">Toolkit</h3>
 
@@ -15,7 +14,7 @@ I am **Muhammad Ibtisam**, a **Silver Medalist** with a deep passion for transit
 ## 📚 Featured Repositories
 
 ### 1. **[SilverOps](https://github.com/ibtisamops/SilverOps)**
-A comprehensive portfolio showcasing my expertise in **DevOps**, **Cloud technologies** and **AI-driven automation**. It contains projects for full-stack systems, tool-specific implementations, and AIOps-related projects.
+A comprehensive portfolio showcasing my expertise in **DevOps**, **Cloud technologies**, and **AI-driven automation**. It includes projects for full-stack systems, tool-specific implementations, and AIOps-related projects.
 
 ### 2. **[Nectar](https://github.com/ibtisamops/nectar)**
 A knowledge base repository containing in-depth documentation for various **DevOps tools**. It features 20+ folders, each dedicated to a specific tool, with detailed guides and theoretical insights to aid in mastering the technologies.
@@ -23,12 +22,9 @@ A knowledge base repository containing in-depth documentation for various **DevO
 ### 3. **[Workbooks](https://github.com/ibtisamops/workbooks)**
 A dedicated repository where I store console outputs from tools I’ve mastered during my learning journey. Each tool has its own directory with corresponding console output files, demonstrating my proficiency in these technologies.
 
-
-
-
-<h3 align="left">Connect with me:</h3>
+## Connect with Me
 <p align="left">
-<a href="https://linkedin.com/in/ibtisamops" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ibtisamops" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/ibtisamops" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
-## Muhammad Ibtisam
+Thank you for visiting my profile! Let's build the future of automation together! 🚀
