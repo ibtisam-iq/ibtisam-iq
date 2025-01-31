@@ -86,7 +86,7 @@ Thank you for visiting my profile! Let's build the future of automation together
 ## 📚 Featured Repositories
 
 ### <h4><a href="https://github.com/ibtisamops/SilverOps">![SilverOps](https://img.shields.io/badge/-SilverOps-black?style=for-the-badge)</a></h4>
-<p style="font-size: 18px;">A <strong>comprehensive portfolio</strong> showcasing my expertise in <strong>DevOps</strong>, <strong>Cloud technologies</strong>, and <strong>AI-driven automation</strong>. It includes projects for:
+<p style="font-size: 22px;">A <strong>comprehensive portfolio</strong> showcasing my expertise in <strong>DevOps</strong>, <strong>Cloud technologies</strong>, and <strong>AI-driven automation</strong>. It includes projects for:
 - Full-stack systems
 - Tool-specific implementations
 - AIOps-related research</p>
