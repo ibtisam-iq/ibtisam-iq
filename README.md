@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Muhammad Ibtisam</h1>
 <h3 align="center">A Passionate DevOps Engineer from Pakistan 🇵🇰</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=ibtisamops&label=Profile%20views&color=0e75b6&style=flat" alt="ibtisamops" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ibtisam-iq&label=Profile%20views&color=0e75b6&style=flat" alt="ibtisam-iq" /> </p>
 
 ## About Me
 
@@ -17,24 +17,24 @@ I am **Muhammad Ibtisam**, a **Silver Medalist** with a profound passion for **D
 
 ## 📚 Featured Repositories
 
-## [![Nectar](https://img.shields.io/badge/-Nectar-black?style=for-the-badge)](https://github.com/ibtisamops/nectar)
+## [![Nectar](https://img.shields.io/badge/-Nectar-black?style=for-the-badge)](https://github.com/ibtisam-iq/nectar)
 A knowledge base repository containing **in-depth documentation** for various **DevOps tools**. 
 - Features 20+ folders, each dedicated to a specific tool, with detailed guides and theoretical insights to aid in mastering the technologies.
 
-## [![SilverOps](https://img.shields.io/badge/-SilverOps-black?style=for-the-badge)](https://github.com/ibtisamops/SilverOps)
+## [![SilverOps](https://img.shields.io/badge/-SilverOps-black?style=for-the-badge)](https://github.com/ibtisam-iq/SilverOps)
 A **comprehensive portfolio** showcasing my expertise in **DevOps**, **Cloud technologies**, and **AI-driven automation**. It includes projects for
 
 - Full-stack systems, 
 - Tool-specific implementations, and 
 - AIOps-related research.
 
-## [![Workbooks](https://img.shields.io/badge/-Workbooks-black?style=for-the-badge)](https://github.com/ibtisamops/workbooks)
+## [![Workbooks](https://img.shields.io/badge/-Workbooks-black?style=for-the-badge)](https://github.com/ibtisam-iq/workbooks)
 A dedicated repository where I store **console outputs** from tools I’ve mastered during my learning journey. 
 - Each tool has its own directory with corresponding console output files, demonstrating my proficiency in these technologies.
 
 ## Connect with Me
 <p align="left">
-<a href="https://linkedin.com/in/ibtisamops" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://linkedin.com/in/ibtisam-iq" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
 Thank you for visiting my profile! Let's build the future of automation together! 🚀
