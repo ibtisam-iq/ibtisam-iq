@@ -34,7 +34,7 @@ A dedicated repository where I store **console outputs** from tools I’ve maste
 
 ## Connect with Me
 <p align="left">
-<a href="www.linkedin.com/in/ibtisam-iq" target="blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/ibtisam-iq/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
 Thank you for visiting my profile! Let's build the future of automation together! 🚀
