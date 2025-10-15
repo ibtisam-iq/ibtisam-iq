@@ -32,6 +32,10 @@ A **comprehensive portfolio** showcasing my expertise in **DevOps**, **Cloud tec
 A dedicated repository where I store **console outputs** from tools I’ve mastered during my learning journey. 
 - Each tool has its own directory with corresponding console output files, demonstrating my proficiency in these technologies.
 
+## 📈 GitHub Stats
+
+![Ibtisam's GitHub stats](https://github-readme-stats.vercel.app/api?username=ibtisam-iq&show_icons=true&theme=radical)
+
 ## Connect with Me
 <p align="left">
 <a href="https://www.linkedin.com/in/ibtisam-iq/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
