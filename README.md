@@ -46,6 +46,12 @@ My learning and implementation follow a continuous lifecycle:
 - Certified Kubernetes Administrator (CKA)  
 - Certified Kubernetes Application Developer (CKAD)
 
+## Achievements
+
+- Silver Medalist  
+- Open-source contributor  
+- Technical writing  
+
 ## Principles
 
 - Rebuildable > runnable once  
@@ -53,9 +59,12 @@ My learning and implementation follow a continuous lifecycle:
 - Understanding > memorisation  
 - Clarity over shortcuts
 
-## Links
+## Engineering Platforms
 
-- Portfolio → https://ibtisam-iq.com  
+- Portfolio → https://ibtisam-iq.com
+- DebugBox → https://debugbox.ibtisam-iq.com
 - Knowledge Base → https://nectar.ibtisam-iq.com  
-- Engineering Blogs → https://blogs.ibtisam-iq.com  
-- LinkedIn → https://www.linkedin.com/in/ibtisam-iq
+- Engineering Blogs → https://blogs.ibtisam-iq.com
+- Infra Bootstrap → https://bootstrap.ibtisam-iq.com
+- Certificate Practice Vault → https://cert-vault.ibtisam-iq.com
+- [LinkedIn](https://www.linkedin.com/in/ibtisam-iq)
