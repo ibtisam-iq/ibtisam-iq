@@ -59,6 +59,8 @@ My learning and implementation follow a continuous lifecycle:
 - Understanding > memorisation  
 - Clarity over shortcuts
 
+> **Running something once is learning. Rebuilding it reliably is engineering.**
+
 ## Engineering Platforms
 
 - Portfolio → https://ibtisam-iq.com
