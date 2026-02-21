@@ -19,19 +19,30 @@ My work is centred on:
 
 My learning and implementation follow a continuous lifecycle:
 
-**Knowledge Base → Reproducible Assets → Distilled Reasoning → Complete Systems**
+```mermaid
+flowchart TD
+    A(["❓ I don't understand something"])
+    B["First-principles learning<br/>Deep mental model"]
+    C(["🔧 I run it for real"])
+    D["Full implementation<br/>Debugging & experiments"]
+    E(["💡 It becomes clear & repeatable"])
+    F["Reusable manifests<br/>Scripts & IaC"]
+    G(["✍️ I explain the practical path"])
+    H["Distilled, problem-oriented<br/>write-up"]
+    I(["🏗️ Multiple components form a platform"])
+    J["System view<br/>& architecture"]
 
-- **Knowledge Base (Nectar)**  
-  First-principles learning, deep execution notes, experiments, and verified understanding.
+    A --> B --> NECTAR[("<b>📚 Nectar</b>")]
+    C --> D --> NECTAR
+    NECTAR --> E --> F --> SILVER[("<b>⚙️ SilverStack</b>")]
+    NECTAR --> G --> H --> BLOG[("<b>📝 Blog</b>")]
+    NECTAR --> I --> J --> PROJECTS[("<b>🏛️ Projects</b>")]
 
-- **SilverStack**  
-  Reproducible infrastructure — manifests, automation, and configurations used to rebuild working environments.
-
-- **Engineering Blogs**  
-  Focused write-ups of real implementations and problem-solving paths.
-
-- **Projects (SilverOps)**  
-  Complete systems where services are connected, exposed, secured, and operated together.
+    style NECTAR   fill:#1565c0,color:#ffffff,stroke:#90caf9
+    style SILVER   fill:#2e7d32,color:#ffffff,stroke:#a5d6a7
+    style BLOG     fill:#e65100,color:#ffffff,stroke:#ffcc80
+    style PROJECTS fill:#9c27b0,color:#ffffff,stroke:#e1bee7
+```
 
 ## Current Direction
 
