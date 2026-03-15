@@ -76,8 +76,9 @@ flowchart TD
 
 - Portfolio → https://ibtisam-iq.com
 - DebugBox → https://debugbox.ibtisam-iq.com
-- Knowledge Base → https://nectar.ibtisam-iq.com  
+- Engineering Projects → https://projects.ibtisam-iq.com   
 - Engineering Blogs → https://blog.ibtisam-iq.com
 - Infra Bootstrap → https://bootstrap.ibtisam-iq.com
 - Certificate Practice Vault → https://cert-vault.ibtisam-iq.com
+- Knowledge Base → https://nectar.ibtisam-iq.com
 - [LinkedIn](https://www.linkedin.com/in/ibtisam-iq)
