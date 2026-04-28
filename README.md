@@ -10,7 +10,7 @@
 Not a CS graduate — my background is in agriculture sciences.
 I came into DevOps and cloud engineering by choice, not by default.
 
-Systems first, tools second. Document everything, understand everything,
+> Systems first, tools second. Document everything, understand everything,
 don't move forward until the foundation is solid.
 
 I work across Kubernetes, CI/CD pipelines, bare-metal clusters, and the automation that
