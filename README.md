@@ -13,7 +13,7 @@ I came into DevOps and cloud engineering by choice, not by default.
 > Systems first, tools second. Document everything, understand everything,
 don't move forward until the foundation is solid.
 
-I work across Kubernetes, CI/CD pipelines, bare-metal clusters, and the automation that
+I work across Kubernetes, DevSecOps pipelines, bare-metal clusters, and the automation that
 makes infrastructure rebuildable rather than just runnable.
 
 ## What I Build
@@ -41,7 +41,7 @@ flowchart LR
 | **Portfolio** | Who I am and what I've built | [ibtisam-iq.com](https://ibtisam-iq.com) |
 | **Projects** | Live project showcase | [projects.ibtisam-iq.com](https://projects.ibtisam-iq.com) |
 | **Nectar** | First-principles notes on every concept I had to deeply understand | [nectar.ibtisam-iq.com](https://nectar.ibtisam-iq.com) |
-| **Runbook** | Documented steps from real infrastructure work — commands, problems, solutions | [bootstrap.ibtisam-iq.com](https://bootstrap.ibtisam-iq.com) |
+| **Runbook** | Documented steps from real infrastructure work — commands, problems, solutions | [runbook.ibtisam-iq.com](https://runbook.ibtisam-iq.com) |
 | **SilverStack** | Reusable Bash scripts, Kubernetes manifests, and IaC — what the Runbook links to | [github.com/ibtisam-iq/silver-stack](https://github.com/ibtisam-iq/silver-stack) |
 | **Blog** | Distilled write-ups of what I built and what I learned | [blog.ibtisam-iq.com](https://blog.ibtisam-iq.com) |
 
