@@ -1,84 +1,66 @@
 <h1 align="center">Muhammad Ibtisam Iqbal</h1>
-<h3 align="center">Infrastructure • Cloud • Kubernetes</h3>
+<h3 align="center">DevOps Engineer · CKA · CKAD</h3>
 
 <p align="left">
   <img src="https://komarev.com/ghpvc/?username=ibtisam-iq&label=Profile%20views&color=0e75b6&style=flat" alt="ibtisam-iq" />
 </p>
 
-## Engineering Focus
+## Who I Am
 
-I build and operate real environments to understand how systems behave, and then turn that understanding into reproducible infrastructure.
+Not a CS graduate — my background is in agriculture sciences.
+I came into DevOps and cloud engineering by choice, not by default.
 
-My work is centred on:
+Systems first, tools second. Document everything, understand everything,
+don't move forward until the foundation is solid.
 
-- running complete setups end-to-end  
-- making them rebuildable from scratch  
-- extracting reusable platform components
+I work across Kubernetes, CI/CD pipelines, bare-metal clusters, and the automation that
+makes infrastructure rebuildable rather than just runnable.
 
-## Working Model
+## What I Build
 
-My learning and implementation follow a continuous lifecycle:
+My learning and implementation follow a continuous pipeline:
 
 ```mermaid
-flowchart TD
-    A(["❓ I don't understand something"])
-    B["First-principles learning<br/>Deep mental model"]
-    C(["🔧 I run it for real"])
-    D["Full implementation<br/>Debugging & experiments"]
-    E(["💡 It becomes clear & repeatable"])
-    F["Reusable manifests<br/>Scripts & IaC"]
-    G(["✍️ I explain the practical path"])
-    H["Distilled, problem-oriented<br/>write-up"]
-    I(["🏗️ Multiple components form a platform"])
-    J["System view<br/>& architecture"]
+flowchart LR
+    A("❓ Encounter a concept\nI don't understand")
+    --> B[("📚 Nectar")]
+    --> C("🔧 Apply it on\nreal infrastructure")
+    --> D[("📋 Runbook")]
+    --> E[("⚙️ SilverStack")]
 
-    A --> B --> NECTAR[("<b>📚 Nectar</b>")]
-    C --> D --> NECTAR
-    NECTAR --> E --> F --> SILVER[("<b>⚙️ SilverStack</b>")]
-    NECTAR --> G --> H --> BLOG[("<b>📝 Blog</b>")]
-    NECTAR --> I --> J --> PROJECTS[("<b>🏛️ Projects</b>")]
+    D --> F[("📖 Blog")]
 
-    style NECTAR   fill:#1565c0,color:#ffffff,stroke:#90caf9
-    style SILVER   fill:#2e7d32,color:#ffffff,stroke:#a5d6a7
-    style BLOG     fill:#e65100,color:#ffffff,stroke:#ffcc80
-    style PROJECTS fill:#9c27b0,color:#ffffff,stroke:#e1bee7
+    style B fill:#1565C0,color:#fff,stroke:#1565C0
+    style D fill:#37474F,color:#fff,stroke:#37474F
+    style E fill:#2E7D32,color:#fff,stroke:#2E7D32
+    style F fill:#E65100,color:#fff,stroke:#E65100
 ```
 
-## Current Direction
-
-- Kubernetes-based platforms  
-- CI/CD infrastructure  
-- Infrastructure as Code  
-- Private networking & service exposure  
-- System lifecycle automation
+| Layer | What it contains | Where |
+|---|---|---|
+| **Portfolio** | Who I am and what I've built | [ibtisam-iq.com](https://ibtisam-iq.com) |
+| **Projects** | Live project showcase | [projects.ibtisam-iq.com](https://projects.ibtisam-iq.com) |
+| **Nectar** | First-principles notes on every concept I had to deeply understand | [nectar.ibtisam-iq.com](https://nectar.ibtisam-iq.com) |
+| **Runbook** | Documented steps from real infrastructure work — commands, problems, solutions | [bootstrap.ibtisam-iq.com](https://bootstrap.ibtisam-iq.com) |
+| **SilverStack** | Reusable Bash scripts, Kubernetes manifests, and IaC — what the Runbook links to | [github.com/ibtisam-iq/silver-stack](https://github.com/ibtisam-iq/silver-stack) |
+| **Blog** | Distilled write-ups of what I built and what I learned | [blog.ibtisam-iq.com](https://blog.ibtisam-iq.com) |
 
 ## Certifications
 
-- Certified Kubernetes Administrator (CKA)  
+- Certified Kubernetes Administrator (CKA)
 - Certified Kubernetes Application Developer (CKAD)
-
-## Achievements
-
-- Silver Medalist  
-- Open-source contributor  
-- Technical writing  
 
 ## Principles
 
-- Rebuildable > runnable once  
-- Systems > individual tools  
-- Understanding > memorisation  
+- Rebuildable > runnable once
+- Systems > individual tools
+- Understanding > memorisation
 - Clarity over shortcuts
 
 > **Running something once is learning. Rebuilding it reliably is engineering.**
 
-## Engineering Platforms
+## Links
 
-- Portfolio → https://ibtisam-iq.com
-- DebugBox → https://debugbox.ibtisam-iq.com
-- Engineering Projects → https://projects.ibtisam-iq.com   
-- Engineering Blogs → https://blog.ibtisam-iq.com
-- Infra Bootstrap → https://bootstrap.ibtisam-iq.com
-- Certificate Practice Vault → https://cert-vault.ibtisam-iq.com
-- Knowledge Base → https://nectar.ibtisam-iq.com
-- [LinkedIn](https://www.linkedin.com/in/ibtisam-iq)
+- DebugBox → [debugbox.ibtisam-iq.com](https://debugbox.ibtisam-iq.com)
+- LinkedIn → [linkedin.com/in/ibtisam-iq](https://www.linkedin.com/in/ibtisam-iq)
+- Portfolio → [ibtisam-iq.com](https://ibtisam-iq.com)
