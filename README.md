@@ -7,18 +7,52 @@
 
 ## Who I Am
 
-Not a CS graduate — my background is in agriculture sciences.
-I came into DevOps and cloud engineering by choice, not by default.
+DevOps Engineer with 2.5 years of hands-on infrastructure work, CKA and CKAD certified (Nov 2025),
+specializing in Kubernetes, CI/CD pipelines, and DevSecOps automation.
+
+Master's degree. Non-traditional background. Every skill here was deliberately built —
+not assigned by a curriculum.
 
 > Systems first, tools second. Document everything, understand everything,
-don't move forward until the foundation is solid.
+> don't move forward until the foundation is solid.
 
-I work across Kubernetes, DevSecOps pipelines, bare-metal clusters, and the automation that
-makes infrastructure rebuildable rather than just runnable.
+## Experience
 
-## What I Build
+- **2.5 years** of full-time, self-directed DevOps engineering (Nov 2023 - Present)
+- Designed and deployed CI/CD pipelines for Java, Python, and Node.js applications across 3+ stacks
+- Built and managed Kubernetes clusters on bare-metal, AWS EKS, and AWS ECS
+- Automated multi-environment deployments with Jenkins and GitHub Actions - from code commit to production
+- Integrated security scanning (SonarQube, Trivy) into pipelines as first-class stages, not afterthoughts
+- Set up and managed private container registry (Nexus), Nginx ingress, DNS, and SSL/TLS end-to-end
+- No corporate employment yet - this profile and the linked projects below are the evidence
 
-My learning and implementation follow a continuous pipeline:
+## Tech Stack
+
+**Orchestration:** Kubernetes (bare-metal, EKS), Docker, Helm, Kustomize  
+**CI/CD:** Jenkins, GitHub Actions  
+**Cloud:** AWS (EKS, ECS, EC2, S3, IAM, VPC)  
+**Security:** SonarQube, Trivy, secrets management  
+**IaC & Scripting:** Bash, YAML, Groovy  
+**Databases:** MySQL, PostgreSQL  
+**Networking:** Nginx, DNS, SSL/TLS, Ingress controllers  
+**OS:** Linux (Ubuntu), macOS  
+
+## What I've Built
+
+All work is documented, versioned, and live:
+
+- **[SilverStack](https://github.com/ibtisam-iq/silver-stack)** - Production-ready Kubernetes manifests,
+  Bash automation scripts, and IaC templates used across all projects
+- **[Runbook](https://runbook.ibtisam-iq.com)** - Real infrastructure commands, failures, and
+  solutions documented as they happened - not sanitized after the fact
+- **[Projects](https://projects.ibtisam-iq.com)** - Live project deployments with full CI/CD pipelines
+  (Java, Python, Node.js apps on EKS, ECS, and bare-metal)
+- **[Nectar](https://nectar.ibtisam-iq.com)** - First-principles technical notes built while
+  implementing, not while watching
+- **[Blog](https://blog.ibtisam-iq.com)** - Distilled write-ups of what I built and what I learned
+- **[DebugBox](https://debugbox.ibtisam-iq.com)** - A lightweight, variant-based debugging container suite for Kubernetes and Docker environments
+
+How everything connects:
 
 ```mermaid
 flowchart LR
@@ -36,19 +70,12 @@ flowchart LR
     style F fill:#E65100,color:#fff,stroke:#E65100
 ```
 
-| Layer | What it contains | Where |
-|---|---|---|
-| **Portfolio** | Who I am and what I've built | [ibtisam-iq.com](https://ibtisam-iq.com) |
-| **Projects** | Live project showcase | [projects.ibtisam-iq.com](https://projects.ibtisam-iq.com) |
-| **Nectar** | First-principles notes on every concept I had to deeply understand | [nectar.ibtisam-iq.com](https://nectar.ibtisam-iq.com) |
-| **Runbook** | Documented steps from real infrastructure work — commands, problems, solutions | [runbook.ibtisam-iq.com](https://runbook.ibtisam-iq.com) |
-| **SilverStack** | Reusable Bash scripts, Kubernetes manifests, and IaC — what the Runbook links to | [github.com/ibtisam-iq/silver-stack](https://github.com/ibtisam-iq/silver-stack) |
-| **Blog** | Distilled write-ups of what I built and what I learned | [blog.ibtisam-iq.com](https://blog.ibtisam-iq.com) |
-
 ## Certifications
 
-- Certified Kubernetes Administrator (CKA)
-- Certified Kubernetes Application Developer (CKAD)
+| Certification | Issuer | Issued | Verify |
+|---|---|---|---|
+| Certified Kubernetes Administrator (CKA) | Linux Foundation | Nov 2025 | [Verify ↗](https://www.credly.com/badges/0f1fd462-102e-42e8-932c-ebd4222d5587) |
+| Certified Kubernetes Application Developer (CKAD) | Linux Foundation | Nov 2025 | [Verify ↗](https://www.credly.com/badges/13e7993c-8bc1-4f82-822d-7382322f7b88) |
 
 ## Principles
 
@@ -59,8 +86,8 @@ flowchart LR
 
 > **Running something once is learning. Rebuilding it reliably is engineering.**
 
-## Links
+## Currently
 
-- DebugBox → [debugbox.ibtisam-iq.com](https://debugbox.ibtisam-iq.com)
-- LinkedIn → [linkedin.com/in/ibtisam-iq](https://www.linkedin.com/in/ibtisam-iq)
-- Portfolio → [ibtisam-iq.com](https://ibtisam-iq.com)
+📍 Islamabad, Pakistan · Open to remote roles globally  
+📬 Actively looking - reach me at [linkedin.com/in/ibtisam-iq](https://www.linkedin.com/in/ibtisam-iq)  
+🌐 Portfolio → [ibtisam-iq.com](https://ibtisam-iq.com)
